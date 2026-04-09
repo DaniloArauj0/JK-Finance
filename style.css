@@ -1,0 +1,31 @@
+/* formatação global da página */
+/* o asterisco serve p formata tds os arquivos dentro do html */
+* {
+    margin: 0;
+    /* resetar bordas e preenchimento da pág que vem por padrão do navegador */
+    padding: 0;
+    /* resetar bordas e preenchimento da pág que vem por padrão do navegador */
+    list-style: none;
+    /* reseta as bolinha q vem por padrao nas listas */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* essa é fml de fonte do html o site todo sera neste padrão */
+    box-sizing: border-box;
+    /* essa tag ajuda os elementos não podem sair da caixa, p nao sair da caixa */
+}
+/*  esta estilizaçao acima é universal */
+/* o ponto nao coloca no inicio do header somente em classes */
+
+header{
+background-color: #D8D8C0;
+padding: 2rem;
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+position: sticky;
+/* o header fica fixado parado */
+left: 0;
+top: 0;
+/* left, top ficam zerado por padrao */
+z-index: 999;
+/* profundidade dos elementos, eixo cartesiano, trazendo ele p frente */
+}
