@@ -12,20 +12,28 @@
     box-sizing: border-box;
     /* essa tag ajuda os elementos não podem sair da caixa, p nao sair da caixa */
 }
+
 /*  esta estilizaçao acima é universal */
 /* o ponto nao coloca no inicio do header somente em classes */
 
-header{
-background-color: #D8D8C0;
-padding: 2rem;
-display: flex;
-align-items: center;
-justify-content: space-evenly;
-position: sticky;
-/* o header fica fixado parado */
-left: 0;
-top: 0;
-/* left, top ficam zerado por padrao */
-z-index: 999;
-/* profundidade dos elementos, eixo cartesiano, trazendo ele p frente */
+header {
+    background-color: #D8D8C0;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: sticky;
+    /* o header fica fixado parado */
+    left: 0;
+    top: 0;
+    /* left, top ficam zerado por padrao */
+    z-index: 999;
+    /* profundidade dos elementos, eixo cartesiano, trazendo ele p frente */
 }
+
+/* ESTILIZAÇÃO DA LOGO */
+.logo-JK {
+    
+}
+
+/* CÓPIAR DA LINHA 32 Á 58 PROX AULA REPOSITÓRIO PROF IGOR GITHUB, FOTO NA PASTA EVENTOS CEL */
