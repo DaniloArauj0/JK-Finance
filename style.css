@@ -33,7 +33,57 @@ header {
 
 /* ESTILIZAÇÃO DA LOGO */
 .logo-JK {
-    
+    width: 8rem;
+    /* largura responsiva da imagem */
+    height: auto;
+    /* o auto servirá cm uma altura automática do navegaor */
 }
 
-/* CÓPIAR DA LINHA 32 Á 58 PROX AULA REPOSITÓRIO PROF IGOR GITHUB, FOTO NA PASTA EVENTOS CEL */
+/* Estilizaçao menu mobile */
+
+.menu-btn {
+    /* ocultando o menu lista */
+    /* div pai mobile */
+    display: none;
+    /* esconde o menu amburgue */
+    font-size: 2rem;
+    cursor: pointer;
+    /* cursor p ativar (a maozinha do mouse) */
+
+}
+
+.nav-menu {
+    /* menu lista */
+    display: none;
+    /* ocultando o menu lista */
+}
+
+.ul-list {
+    /* responsavel somente pela organização das listas e não pelas ancoras*/
+    display: flex;
+    gap: 15px;
+}
+
+.ul-list li a {
+    /* é o caminho da ancora q serve p remover o sublinahdo da lista e outras coisas etc... */
+    text-decoration: none;
+    color: black;
+    padding: 0.8rem;
+}
+
+.ul-list li a:hover {
+    /* houver ao passar o mouse vai acontecer alguma coisa; ex; altera a cor, borda etc... ele tem q ficar separado da linha 67; Qdo for usar o houver tem q ele abrir um novo bloco */
+    color: rgb(65, 64, 64);
+    transition: 0.8s;
+    border-bottom: 2px solid black;
+    /*border-bottom: com 3 valores */
+}
+
+/* FINALIZAÇÃO DO HEADER */
+
+.sec01 {
+    background-image: url(IMAGENS/DESKTOP.jpg);
+    background-size: cover;
+    background-position: top;
+    padding: 13rem;
+}
