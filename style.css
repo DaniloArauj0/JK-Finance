@@ -87,3 +87,32 @@ header {
     background-position: top;
     padding: 13rem;
 }
+.sec02 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5 rem;
+    padding: 8rem;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.caixa{
+    background-color: grey;
+    color: antiquewhite;
+    font-size: 1.2rem;
+    width: 25%;
+    height: 14rem;
+    box-shadow: 10px 10px 20px gray; 
+    border-radius: 5px;
+    min-width: 300px;
+    transition: 0.8s;
+    padding: 1rem;
+}
+    .pai-caixas{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        padding: 2rem;
+        flex-wrap: wrap;
+    }
