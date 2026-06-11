@@ -87,32 +87,133 @@ header {
     background-position: top;
     padding: 13rem;
 }
+
 .sec02 {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 2.5 rem;
+    gap: 2.5rem;
     padding: 8rem;
     flex-wrap: wrap;
     flex-direction: column;
 }
-.caixa{
+
+
+.caixa {
+    /* .caixa: são as caixas da direita e da esquerda ao mesmo tempo */
     background-color: grey;
     color: antiquewhite;
     font-size: 1.2rem;
-    width: 25%;
-    height: 14rem;
-    box-shadow: 10px 10px 20px gray; 
+
+    /* responsividade */
+    width: 100%;
+    max-width: 420px;
+    height: 16rem;
+
+    /* aumenta a caixa e deixa as informações detro fk melhor */
+    box-shadow: 10px 10px 20px gray;
     border-radius: 5px;
-    min-width: 300px;
     transition: 0.8s;
     padding: 1rem;
 }
-    .pai-caixas{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 2rem;
-        padding: 2rem;
-        flex-wrap: wrap;
+
+
+.pai-caixas {
+    /* responsavel pela (organização) das duas caixas  */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+    flex-wrap: wrap;
+}
+
+/* tablet e menor: mantém as 2 caixas se couberem, mas evita espaçamento excessivo */
+@media (max-width: 1024px) {
+    .sec02 {
+        padding: 5rem 2rem;
     }
+
+    .pai-caixas {
+        gap: 1.4rem;
+        padding: 1.6rem 1rem;
+    }
+}
+
+
+.caixa-icons i {
+    font-size: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 0.3rem;
+    color: antiquewhite;
+}
+
+.caixa-icons {
+    text-align: center;
+    padding: 0.5rem;
+}
+
+.texto-caixa {
+    text-align: center;
+    padding: 0.5rem;
+}
+
+.texto-caixa p {
+    font-size: 1.2rem;
+    margin-bottom: 0.3rem;
+
+}
+
+.texto-caixa button {
+    width: 8rem;
+    background-color: rgb(22, 22, 24);
+    padding: 0.5rem;
+    border: none;
+    color: white;
+
+}
+
+.text-content{
+    text-align: center;
+}
+
+.text-content h3{
+    font-size: 2rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+.text-content p{
+    color: rgb(71, 70, 70);
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+/* Ajustes responsivos (mobile / tablet) */
+@media (max-width: 768px) {
+    .sec02 {
+        padding: 3.5rem 1.2rem;
+        gap: 1.5rem;
+    }
+
+    .pai-caixas {
+        padding: 1.2rem 0.8rem;
+        gap: 1.2rem;
+        flex-direction: column;
+    }
+
+    .caixa {
+        max-width: 520px;
+        height: auto;
+    }
+
+    .text-content h3 {
+        font-size: 1.6rem;
+        margin-bottom: 1rem;
+    }
+
+    .text-content p {
+        font-size: 1rem;
+    }
+}
+
