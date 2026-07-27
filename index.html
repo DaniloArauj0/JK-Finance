@@ -6,7 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script src="sript.js" defer></script>
+    <!-- defer indica q o js vai ser carregado por ultimo. se colocar ele n precisar colocar escrito no final -->
     <script src="https://kit.fontawesome.com/5729e0ff2e.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  
+
 </head>
 
 <body>
@@ -81,13 +86,23 @@
 
         <section class="sec02">
             <div class="text-content">
-                <h3>investindo nos seus sonhos</h3>
+                <span class="teste">
+                    <!-- batatinha é a classe que eu referencio no js dentro da biblioteca -->
+                    <!-- p chamar a biblioteca tem q colocar o link no head, depois configurar no js -->
+                    <!-- usar a IA para fazer as bibliotecas -->
+
+                </span>
 
                 <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum doloremque molestias minima, minus
                     mollitia reiciendis
                 </p>
 
             </div>
+
+            
+                
+
+            
 
             <div class="pai-caixas"> <!-- esta div gerencia as duas caixas de baixo -->
 
@@ -124,23 +139,192 @@
         </section>
 
         <section class="sec03">
-
+            <button>FALE CONOSCO</button>
         </section>
-
+        <!-- passo 1 estilizar a propia seção alinhamento dos itens q sao as 2 caixas da dir e esq
+ passo 2 estilizar as 2 caixas com a class text content sec04 > lagura altura min widf
+ passo 3 colocar imagem de fundo na segunda div no css -->
         <section class="sec04">
+            <!-- sec04 pai para mexer em tds as caixas de dentro de uma vez ela é a responsavel   -->
 
+            <!-- caixa da esquerda em baixo: (guardando text, paragrafo e button) text content - sec04 -->
+            <div class="text-content-sec04 caixa">
+                <h3>REFÊNCIA NO MERCADO FINANCEIRO</h3>
+
+                <p>organizando suas finanças e criando estratégias para garantir o controle total e impulsionar seu
+                    crescimento.</p>
+                <button>SAIBA MAIS</button>
+            </div>
+
+            <!-- caixa da direta abaixo guardando a imagem, esta no css -->
+
+            <div class="sec04-img caixa">
+
+            </div>
         </section>
 
-        <section class="05">
+        <section class="sec05">
+            <div class="text-content-sec05">
+                <h3 class="titulo-do-texto">Deixe seu email para contato</h3>
+                <p class="paragrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ipsum adipisci rem
+                    aliquid sapiente
+                    et recusandae voluptatum dignissimos</p>
+                <form action="">
+                    <!-- todo formulario tem uma ação que é o action, o action é responsavel por isso; pode ser um arq php, phython, javascript... -->
+                    <input class="input-email" type="email" placeholder="digite o seu melhor email" required>
+                    <!-- input é a caixa type: tipo de informaçao q vai ser inserida n acaixa. o placeholder texto p indicar oq vai ser digitado dentro. requied: esta opção é obrigatoria ser preenchida, se n for preenchida nao muda de campo.  -->
 
+                    <input class="input-form" type="submit" value="Enviar email">
+                    <!-- input do botão:responsavel pela criação do botão e envio de email. value: texto q será exibido no botão. não pode ser botton -->
+                </form>
+            </div>
         </section>
+
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="imagem/building-9682225_1280.jpg"></div>
+                <div class="swiper-slide"><img src="imagem/BANNER-02.jpg"></div>
+                <div class="swiper-slide"><img src="imagem/gemini.png"></div>
+                <div class="swiper-slide"><img src="imagem/gemini.png"></div>
+                <div class="swiper-slide"><img src="imagem/gemini.png"></div>
+                <div class="swiper-slide"><img src="imagem/gemini.png"></div>
+                <div class="swiper-slide"><img src="imagem/gemini.png"></div>
+                <div class="swiper-slide"><img src="imagem/gemini.png"></div>
+
+            </div>
+
+            <!-- Botões -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+
+            <!-- Paginação (opcional) -->
+            <!-- <div class="swiper-pagination"></div> -->
+        </div>
     </main>
     <footer>
+        <div class="content">
+            <!-- div pai content responsavel por gerenciar e organizar tds as 3 caixas q tem dentro dela  -->
+            <!-- aqui estao as 3 caixas que contem as listas do roda pé e sao iguais -->
+            <div class="div-list">
+                <ul>
+                    <li>
+                        <a href="">SAIBA MAIS</a>
+                    </li>
 
+                    <li>
+                        <a href="">POLÍTICA DE PRIVACIDADE</a>
+                    </li>
+
+                    <li>
+                        <a href="">LGPD</a>
+                    </li>
+
+                    <li>
+                        <a href="">SUPORTE</a>
+                    </li>
+
+                </ul>
+
+                <hr class="line">
+            </div>
+
+            <div class="div-list">
+                <ul>
+                    <li>
+                        <a href="">SAIBA MAIS</a>
+                    </li>
+
+                    <li>
+                        <a href="">POLÍTICA DE PRIVACIDADE</a>
+                    </li>
+
+                    <li>
+                        <a href="">LGPD</a>
+                    </li>
+
+                    <li>
+                        <a href="">SUPORTE</a>
+                    </li>
+
+
+                </ul>
+
+                <hr class="line">
+            </div>
+
+            <div class="div-list">
+                <ul>
+                    <li>
+                        <a href="">SAIBA MAIS</a>
+                    </li>
+
+                    <li>
+                        <a href="">POLÍTICA DE PRIVACIDADE</a>
+                    </li>
+
+                    <li>
+                        <a href="">LGPD</a>
+                    </li>
+
+                    <li>
+                        <a href="">SUPORTE</a>
+                    </li>
+
+
+                </ul>
+
+                <hr class="line">
+            </div>
+
+        </div>
+
+
+
+        <div class="social-media">
+            <i class="fa-brands fa-x-twitter"></i>
+            <i class="fa-brands fa-twitch"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <hr class="line-strong">
+            <!-- hr é a linha de divisao -->
+            <p>&COPY;2025 | TODOS DIREITOS RESERVADOS</p>
+        </div>
     </footer>
 
     <script src="sript.js"></script>
     <!-- script deve ser colocado por ultimo depois do footer mas dentro do body. src é o caminho p colocar o arquivo sript.js-->
+
+    <!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+const swiper = new Swiper(".meuCarrossel", {
+    loop: true,
+    spaceBetween: 20,
+    slidesPerView: 3,
+
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+
+    breakpoints: {
+        320: {
+            slidesPerView: 1
+        },
+        768: {
+            slidesPerView: 2
+        },
+        1024: {
+            slidesPerView: 3
+        }
+    }
+});
+</script>
 </body>
 
 </html>
