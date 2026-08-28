@@ -6,17 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <script src="sript.js" defer></script>
+    <script src="script.js" defer></script>
     <!-- defer indica q o js vai ser carregado por ultimo. se colocar ele n precisar colocar escrito no final -->
     <script src="https://kit.fontawesome.com/5729e0ff2e.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
 </head>
 
 <body>
     <header>
-        <!-- header são 4 blocos de informações: 3 div e um NAV. 
+
+        <!-- obs branch tds os colaboradores podem mexer no cód igo, mas n podem mexer no branch main, só o dono do projeto pode mexer no main. o branch main é a versão final do projeto. os colaboradores podem criar um branch e fazer as alterações e depois enviar p o dono do projeto analisar e aprovar ou n. caminho github no google depois repositorio q quer mexer configuraçoes depois colaboradores e depois add pessoas insere o nome do usuario e ajustar visibilidade -->
+       <!-- header são 4 blocos de informações: 3 div e um NAV. 
         1- div: logo
         2 div: amburgue
         3 nav: navegação da lista no mobile e disktop
@@ -86,6 +88,7 @@
 
         <section class="sec02">
             <div class="text-content">
+                <!-- text content é só p organizar a classe nao precisa repetir qdo for fzr outra biblioteca -->
                 <span class="teste">
                     <!-- batatinha é a classe que eu referencio no js dentro da biblioteca -->
                     <!-- p chamar a biblioteca tem q colocar o link no head, depois configurar no js -->
@@ -99,10 +102,10 @@
 
             </div>
 
-            
-                
 
-            
+
+
+
 
             <div class="pai-caixas"> <!-- esta div gerencia as duas caixas de baixo -->
 
@@ -139,7 +142,12 @@
         </section>
 
         <section class="sec03">
-            <button>FALE CONOSCO</button>
+            <div>
+                <!-- div separa o botao do texto digitavel -->
+                <h3 class="segundo-text-digitavel">
+                </h3>
+            </div>
+            <div> <button>FALE CONOSCO</button> </div>
         </section>
         <!-- passo 1 estilizar a propia seção alinhamento dos itens q sao as 2 caixas da dir e esq
  passo 2 estilizar as 2 caixas com a class text content sec04 > lagura altura min widf
@@ -156,7 +164,7 @@
                 <button>SAIBA MAIS</button>
             </div>
 
-            <!-- caixa da direta abaixo guardando a imagem, esta no css -->
+            <!-- caixa da direita abaixo esta a imagem, no css -->
 
             <div class="sec04-img caixa">
 
@@ -180,13 +188,13 @@
             </div>
         </section>
 
-        <div class="swiper mySwiper">
+        <div class="swiper-mySwiper">
             <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="imagem/building-9682225_1280.jpg"></div>
-                <div class="swiper-slide"><img src="imagem/BANNER-02.jpg"></div>
-                <div class="swiper-slide"><img src="imagem/gemini.png"></div>
-                <div class="swiper-slide"><img src="imagem/gemini.png"></div>
-                <div class="swiper-slide"><img src="imagem/gemini.png"></div>
+                <div class="swiper-slide"><img src="IMAGENS/building-9682225_1280.jpg"></div>
+                <div class="swiper-slide"><img src="IMAGENS/BANNER-02.jpg"></div>
+                <div class="swiper-slide"><img src="IMAGENS/geralt-dollar-660223.png"></div>
+                <div class="swiper-slide"><img src="IMAGENS/geralt-dollar-660223.png"></div>
+                <div class="swiper-slide"><img src="IMAGENS/geralt-analysis-680572.jpg"></div>
                 <div class="swiper-slide"><img src="imagem/gemini.png"></div>
                 <div class="swiper-slide"><img src="imagem/gemini.png"></div>
                 <div class="swiper-slide"><img src="imagem/gemini.png"></div>
@@ -294,37 +302,9 @@
     <!-- script deve ser colocado por ultimo depois do footer mas dentro do body. src é o caminho p colocar o arquivo sript.js-->
 
     <!-- Swiper JS -->
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-<script>
-const swiper = new Swiper(".meuCarrossel", {
-    loop: true,
-    spaceBetween: 20,
-    slidesPerView: 3,
 
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-    },
-
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
-
-    breakpoints: {
-        320: {
-            slidesPerView: 1
-        },
-        768: {
-            slidesPerView: 2
-        },
-        1024: {
-            slidesPerView: 3
-        }
-    }
-});
-</script>
 </body>
 
 </html>

@@ -189,12 +189,17 @@ header {
 .sec03 {
     background-image: url(IMAGENS/building-9682225_1280.jpg);
     background-size: cover;
+
     background-position: center;
     background-attachment: fixed;
     padding: 10rem;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+    color: red;
+    upercase: uppercase;
 }
 
 .sec03 button {
@@ -256,9 +261,11 @@ header {
     cursor: pointer;
     transition: 0.8s;
 }
+
 .text-content-sec04 button:hover {
     background-color: rgb(71, 70, 70);
 }
+
 /* estou iniciando a seção do formulario */
 .sec05 {
     padding: 7rem;
@@ -268,7 +275,8 @@ header {
     text-align: center;
     flex-wrap: wrap;
 }
-.input-email{
+
+.input-email {
     padding: 0.8rem;
     width: 23rem;
     background-color: rgba(128, 128, 128, 0.315);
@@ -276,20 +284,23 @@ header {
     border: none;
     margin: 1.5rem;
 }
-.input-form{
+
+.input-form {
     width: 8rem;
     background-color: rgb(22, 22, 24);
     padding: 0.5rem;
     color: antiquewhite;
     border: none;
 }
-.titulo-do-texto{
+
+.titulo-do-texto {
     font-size: 1.4rem;
     font-weight: 800;
     text-transform: uppercase;
     margin-bottom: 2rem;
 }
-.paragrafo{
+
+.paragrafo {
     font-size: 0.8rem;
     font-weight: 600;
 }
@@ -307,7 +318,7 @@ footer {
     justify-content: center;
     gap: 3rem;
     flex-wrap: wrap;
-    
+
 }
 
 
@@ -316,7 +327,7 @@ footer {
 }
 
 .social-media p {
-  color: white;
+    color: white;
 }
 
 .social-media i {
@@ -360,36 +371,48 @@ footer {
 }
 
 .auto-type {
-  padding: 1.5rem;
-   font-size: 1.5rem;
-  /*tamanho da fonte*/
-  font-weight: 800;
-  /*peso da fonte*/
-  text-transform: uppercase;
-  /*tornando o texto em caixa alta*/
-  margin-bottom: 2rem;
-  /*margem inferior do título*/
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    /*tamanho da fonte*/
+    font-weight: 800;
+    /*peso da fonte*/
+    text-transform: uppercase;
+    /*tornando o texto em caixa alta*/
+    margin-bottom: 2rem;
+    /*margem inferior do título*/
 }
 
 .swiper {
-  width: 100%;
-  max-width: 1100px;
-  margin: auto;
-  padding: 3rem;
-  margin-bottom: 2rem;
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    padding: 3rem;
+    margin-bottom: 2rem;
 }
 
 .swiper-slide img {
-  width: 100%;
-  height: 18rem;          /* altura fixa — todas ficam iguais */
-  object-fit: cover;      /* mantém proporção e evita distorções */
-  border-radius: 12px;    /* opcional */
-  transition: 0.8s;
-  cursor: pointer;
+    width: 100%;
+    height: 18rem;
+    /* altura fixa — todas ficam iguais */
+    object-fit: cover;
+    /* mantém proporção e evita distorções */
+    border-radius: 12px;
+    /* opcional */
+    transition: 0.8s;
+    cursor: pointer;
+}
+.swiper-mySwiper {
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    padding: 0rem;
+    margin-bottom: 2rem;
+    height: 350px;
+   
 }
 
-.swiper-slide img:hover{
-  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.491);
+.swiper-slide img:hover {
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.491);
 }
 
 
@@ -401,13 +424,16 @@ footer {
 
 /* Ícone do menu (hambúrguer) */
 .menu-btn {
-  font-size: 2rem;
-  cursor: pointer;
-  display: none; /* torna o item invisível/só aparece no mobile */
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+    /* torna o item invisível/só aparece no mobile */
 }
+
 /* navegação do menu hamburguer */
 .nav-menu {
-  display: none; /*só irá aparecer no mobile*/
+    display: none;
+    /*só irá aparecer no mobile*/
 }
 
 
@@ -419,102 +445,119 @@ footer {
 
 @media (max-width: 500px) {
 
-  header {
-    padding: 1rem;
-    margin-right: -5rem;
-    /*correção menu navBar*/
-    justify-content: space-between;
-  }
+    header {
+        padding: 1rem;
+        margin-right: -5rem;
+        /*correção menu navBar*/
+        justify-content: space-between;
+    }
 
-  .logo-JK{
-    width: 6rem;
-    margin-left: 3rem;
-  }
+    .logo-JK {
+        width: 6rem;
+        margin-left: 3rem;
+    }
 
 
-  .section-01 {
-    background-image: url(imagem/TABLET.jpg); /*trocando a img para telas menores*/
-    padding: 8rem; /*diminuindo o preenchimento da section*/
+    .section-01 {
+        background-image: url(imagem/TABLET.jpg);
+        /*trocando a img para telas menores*/
+        padding: 8rem;
+        /*diminuindo o preenchimento da section*/
 
-  }
+    }
 
-  /* Centraliza tudo dentro da section-02 */
-  .section-02 {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 4rem 1rem; /*primeiro valor é o padding superior/inferior
+    /* Centraliza tudo dentro da section-02 */
+    .section-02 {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 4rem 1rem;
+        /*primeiro valor é o padding superior/inferior
     segundo valor é o padding left/right*/
-  }
+    }
 
-  /* Centraliza o texto do título e parágrafo */
-  .text-content h3 {
-    font-size: 1.6rem;
-    text-align: center;
-    margin-bottom: 1.5rem;
-  }
+    /* Centraliza o texto do título e parágrafo */
+    .text-content h3 {
+        font-size: 1.6rem;
+        text-align: center;
+        margin-bottom: 1.5rem;
+    }
 
-  .text-content p {
-    font-size: 1rem;
-    text-align: center;
-    padding: 0 1rem;
-  }
+    .text-content p {
+        font-size: 1rem;
+        text-align: center;
+        padding: 0 1rem;
+    }
 
-  /* Faz as caixas ficarem uma embaixo da outra e centralizadas */
-  .pai-caixas {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 1.5rem;
-    padding: 1rem;
-  }
+    /* Faz as caixas ficarem uma embaixo da outra e centralizadas */
+    .pai-caixas {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+        padding: 1rem;
+    }
 
-  .texto-caixa p {
-    font-size: 1rem;
-  }
+    .texto-caixa p {
+        font-size: 1rem;
+    }
 
-  .texto-caixa button {
-    width: 100%;
-    max-width: 10rem;
-    margin-top: 1rem;
-  }
-  
-
-  .menu-desktop {
-    /* Aqui estamos ocultando o menu DESKTOP para versões MOBILE */
-    display: none;
-    /*Responsável por ocultar o menu ou qualquer outra propriedade*/
-  }
-
-  .menu-btn {
-    display: flex; /*tornando o menuHamburger Visível*/
-    margin-right: -3rem;/*posicionamento do menu*/
-  }
-
-/* MENU VERTICAL */
-  .nav-menu {
-    position: absolute;
-    top: -30rem; /* começa escondido acima */
-    left: -2rem; /*ajustando o alinhamento do menu*/
-    width: 100%; /*largura total da caixa do menu*/
-    height: 30vh;/*altura da caixa do menu*/
-    background-color: #D8D8C0;
-    transition: top 0.3s ease-in-out;/* transição suave */
-    display: flex; /*alinhamento dos itens*/
-    justify-content: center;/*alinhamento horizontal*/
-    align-items: center; /*alinhamento vertical*/
-  }
-   .show { /*essa class será usada pelo JavaScript para ação do menu*/
-    top: 90px; /* desce suavemente quando é ativado */
-    left: -2rem; /*posicionamento do menu*/
-  }
+    .texto-caixa button {
+        width: 100%;
+        max-width: 10rem;
+        margin-top: 1rem;
+    }
 
 
+    .menu-desktop {
+        /* Aqui estamos ocultando o menu DESKTOP para versões MOBILE */
+        display: none;
+        /*Responsável por ocultar o menu ou qualquer outra propriedade*/
+    }
 
-/* MENU HORIZONTAL */
+    .menu-btn {
+        display: flex;
+        /*tornando o menuHamburger Visível*/
+        margin-right: -3rem;
+        /*posicionamento do menu*/
+    }
 
-/* .nav-menu {
+    /* MENU VERTICAL */
+    .nav-menu {
+        position: absolute;
+        top: -30rem;
+        /* começa escondido acima */
+        left: -2rem;
+        /*ajustando o alinhamento do menu*/
+        width: 100%;
+        /*largura total da caixa do menu*/
+        height: 30vh;
+        /*altura da caixa do menu*/
+        background-color: #D8D8C0;
+        transition: top 0.3s ease-in-out;
+        /* transição suave */
+        display: flex;
+        /*alinhamento dos itens*/
+        justify-content: center;
+        /*alinhamento horizontal*/
+        align-items: center;
+        /*alinhamento vertical*/
+    }
+
+    .show {
+        /*essa class será usada pelo JavaScript para ação do menu*/
+        top: 90px;
+        /* desce suavemente quando é ativado */
+        left: -2rem;
+        /*posicionamento do menu*/
+    }
+
+
+
+    /* MENU HORIZONTAL */
+
+    /* .nav-menu {
   position: fixed;
   top: 0;
   left: -100%;escondido fora da tela 
@@ -528,21 +571,21 @@ footer {
   flex-direction: column;
   z-index: 999; 
 }
-  */ 
+  */
 
-/* Quando o JS adicionar a classe .show 
+    /* Quando o JS adicionar a classe .show 
 .show {
   left: 0; /* entra na tela 
 } */
 
 
 
-  .ul-list2 {
-    flex-direction: column;
-    gap: 10px;
-    padding: 1rem 0;
-  }
+    .ul-list2 {
+        flex-direction: column;
+        gap: 10px;
+        padding: 1rem 0;
+    }
 
-  
+
 
 }
